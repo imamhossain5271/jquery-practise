@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Hello, world!</title>
+  </head>
+
+
+  <body>
+    <!-- jequery start -->
+
+    <h1>Click the button to change the text</h1>
+    <p id="text">Hello ssb</p>
+    <button type="button" onclick="myFunction()">Click me</button>
+     <script>
+
+       function myFunction(){
+        document.getElementById("text").innerHTML="SSB 156 is very helpful";
+      }
+      
+     </script>
+     
+     <!-- time and date display -->
+     <br>
+     <br>
+
+     <button type="button" onclick="myTest()">Click me to display date and time</button>
+     <p id="demo"></p>
+     <script>
+       function myTest(){
+        document.getElementById("demo").innerHTML=Date();
+       }
+     </script>
+     <!-- light off on -->
+      <br>
+     <br>
+
+   <img id="bulb" src="images/pic_bulboff.gif" alt="bulb"><br><br><br>
+   <button type="button" onclick="myFunction1()">on</button>
+   <button type="button" onclick="myFunction2()">off</button>
+
+   <script>
+       function myFunction1(){
+        document.getElementById("bulb").src='images/pic_bulbon.gif';
+       }
+        function myFunction2(){
+        document.getElementById("bulb").src='images/pic_bulboff.gif';
+       }
+
+</script>
+     <!-- green and ripe papaya -->
+     <br>
+     <br>
+
+   <img id="papaya" src="images/green-papaya.jpg" alt="papaya"><br><br><br>
+   <button type="button" onclick="myFunction3()">Ripe</button>
+   <button type="button" onclick="myFunction4()">Green</button>
+
+   <script>
+       function myFunction3(){
+        document.getElementById("papaya").src='images/ripe-papaya.jpg';
+       }
+        function myFunction4(){
+        document.getElementById("papaya").src='images/green-papaya.jpg';
+       }
+     </script>
+     <!-- font size -->
+     <br>
+     <br>
+
+     
+     <h1 id="textsize">I Love JQuery.</h1>
+     <button type="button" onclick="myTest1()">Click me to increase the font size</button>
+     <script>
+       function myTest1(){
+        document.getElementById("textsize").style.fontSize="70px";
+       }
+     </script>
+
+     <!-- adding,subtraction,multiplication,division -->
+     <br><br>
+     <p>adding</p>
+     
+     <p>
+      x = 5;  <br> 
+      y = 6;<br>
+      z = x + y;<br>
+      Z=?
+</p>
+<h3 id="demo1"></h3>
+ <button type="button" onclick="myTestx()">Click me to add</button>
+
+<script>
+var x, y, z;  // Statement 1
+x = 5;    // Statement 2
+y = 6;    // Statement 3
+z = x + y;  // Statement 4
+function myTestx(){
+document.getElementById("demo1").innerHTML = + z + ".";  
+}
+</script>
+
+
+
+    <!-- jequery end -->
+    
+    
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
+
+  </body>
+</html>
